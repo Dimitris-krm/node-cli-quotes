@@ -12,15 +12,13 @@ async function welcome(){
     console.clear()
     const rainbowTitle = chaclkAnimation.rainbow(`Hello there lovely person`)
     await sleep()
-    console.log(args)
-    console.log(args[1])
     handleAnswer(args)
    
 }
 async function handleAnswer(input){
     const spinner = createSpinner("Generating random quote from random ass site...").start();
     await sleep();
-    spinner.success({text:`Here's your quote ${playerName}`})
+    spinner.success({text:`Here's your quote`})
 
     // getInspirationalFact();
     switch(input[0]){
